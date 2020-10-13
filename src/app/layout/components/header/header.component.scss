@@ -1,0 +1,17 @@
+@import "../../../../layout-variables";
+
+.header {
+  height: $header-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .nav-btn {
+    margin-right: 20px;
+
+    &.active {
+      color: white;
+      background-color: grey;
+    }
+  }
+}

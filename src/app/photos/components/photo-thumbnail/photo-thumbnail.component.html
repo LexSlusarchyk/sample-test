@@ -1,0 +1,6 @@
+<mat-card class="photo-card"
+          [ngClass]="{large: showLarge}"
+          routerLink="/photo/{{photo.id}}"
+          (click)="onPhotoClicked($event)">
+  <img mat-card-image src="{{photo.url}}" alt="">
+</mat-card>

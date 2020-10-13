@@ -1,0 +1,9 @@
+<div class="photos-list"
+     infinite-scroll
+     [infiniteScrollDistance]="scrollDistance"
+     [infiniteScrollUpDistance]="scrollUpDistance"
+     [infiniteScrollThrottle]="throttle"
+     (scrolled)="onScrollDown()">
+  <app-photos-list [photosList]="photosList" (photoClicked)="onPhotoCLicked($event)"></app-photos-list>
+</div>
+<app-common-spinner *ngIf="photosList.loading"></app-common-spinner>

@@ -1,0 +1,6 @@
+<div class="photos-list">
+  <app-photo-thumbnail [photo]="photo"
+                       *ngFor="let photo of photosList.data"
+                       (photoClicked)="onPhotoClicked($event)"
+  ></app-photo-thumbnail>
+</div>

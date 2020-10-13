@@ -1,0 +1,14 @@
+@import "../../../../layout-variables";
+
+.photo-card {
+  max-width: $photo-card-max-width;
+  margin-bottom: 20px;
+
+  &.large {
+    max-width: $photo-card-max-width * 2;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

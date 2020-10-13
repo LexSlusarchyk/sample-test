@@ -1,0 +1,9 @@
+<div class="photo" *ngIf="photo">
+  <app-photo-thumbnail [photo]="photo" [showLarge]="true"></app-photo-thumbnail>
+  <div class="action-container">
+    <a class="remove-btn"
+       mat-raised-button
+       (click)="removeFromFavorite()"
+    >Remove from favorites</a>
+  </div>
+</div>
